@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+  <title>Transavia</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body class="bodygrid">
+  <!-- header with logo & navigation -->
+  <header>
+    <img src="img/transavia-logo.svg" class="logo" />
+    <!-- <nav>
+      <ul>
+        <li><a href="#">Vluchtstatus</a>
+          <li><a href="#">Inchecken</a>
+            <li><a href="#">Inpaklijst</a>
+      </ul>
+    </nav> -->
+    <section class="search">
+      <!--<h3>Zoek een verhaal</h3>-->
+      <input type="text" placeholder="Typ hier uw zoekwoorden">
+      <button type="submit" class="button searchbutton btn-primary"><img src="img/search-icon-white.png"></img></button>
+    </section>
+    <div class="menu-icons-container">
+      <a href="#" class="inlog-text">Inloggen</a>
+      <img src="img/home-icon.jpg" class="menu-icon" />
+      <img src="img/logon-icon.jpg" class="logon-icon" />
+      <img src="img/search-icon.png" class="search-icon" />
+    </div>
+  </header>
+  <main class="maingrid">
+    <!-- titel, search & filter/sort options -->
+    <section class="sub-header">
+      <h1>Welkom</h1>
+      <form class="login">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Wachtwoord">
+        <a href="#"><button type="submit" class="btn-primary">Inloggen</button></a>
+      </form>
+      <!-- <div class="sort">
+        <h3>Sorteer op</h3>
+        <button>Alfabet</button>
+        <button>Aangeraden</button>
+        <button>Leesduur</button>
+      </div> -->
+      <!-- <div class="nothing">
+      </div> -->
+      <div class="filter">
+        <!--<h3>Filter op</h3>-->
+        <ul>
+          <button class="btn--color-filter"></button>
+          <button class="btn--color-filter"></button>
+          <button class="btn--color-filter"></button>
+          <button class="btn--color-filter"></button>
+        </ul>
+      </div>
+    </section>
+    <!-- part with all the stories -->
+    <section class="all-stories1">
+      <!-- <h2 class="list-title-stories"> Jouw lijstje</h2> -->
+      <div class="story">
+        <h2>Freudiaans</h2>
+        <img src="/img/image-of-a-cat.jpg" alt="cat">
+        <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek
+          van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op 99 verschillende manieren probeert te vertellen dat hij homoseksueel is en seks wil met...</p>
+        <button type="submit" class="btn-primary readbutton">Lezen</button>
+      </div>
+      <div class="story">
+        <h2>Steenkolenfrans</h2>
+        <img src="/img/image-of-a-cat.jpg" alt="cat">
+        <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur Exercices de Style de Raymond Queneau. C’est
+          un livre très dificile d’acquérir. Mais zut alors, quelle ravage ici! Il y a beaucoup de puits de travaille! Les politis enfonsent, les foret forent. Devant le bibliothèque...</p>
+        <button type="submit" class="btn-primary readbutton">Lezen</button>
+      </div>
+      <div class="story">
+        <h2>Het gebrek</h2>
+        <img src="/img/image-of-a-cat.jpg" alt="cat">
+        <p>De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en een striemende miezerregen geselen mijn gezicht. De mensen kijken voor zich uit, ieder voor zich. Ik ben op weg richting de...</p>
+        <button type="submit" class="btn-primary readbutton">Lezen</button>
+      </div>
+    </section>
+    <section class="all-stories2">
+      <!-- <h2 class="list-title-stories"> Jouw lijstje</h2> -->
+      <div class="story">
+        <h2>Freudiaans</h2>
+        <img src="/img/image-of-a-cat.jpg" alt="cat">
+        <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek
+          van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op 99 verschillende manieren probeert te vertellen dat hij homoseksueel is en seks wil met...</p>
+        <button type="submit" class="btn-primary readbutton">Lezen</button>
+      </div>
+      <div class="story">
+        <h2>Steenkolenfrans</h2>
+        <img src="/img/image-of-a-cat.jpg" alt="cat">
+        <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur Exercices de Style de Raymond Queneau. C’est
+          un livre très dificile d’acquérir. Mais zut alors, quelle ravage ici! Il y a beaucoup de puits de travaille! Les politis enfonsent, les foret forent. Devant le bibliothèque...</p>
+        <button type="submit" class="btn-primary readbutton">Lezen</button>
+      </div>
+      <div class="story">
+        <h2>Het gebrek</h2>
+        <img src="/img/image-of-a-cat.jpg" alt="cat">
+        <p>De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en een striemende miezerregen geselen mijn gezicht. De mensen kijken voor zich uit, ieder voor zich. Ik ben op weg richting de...</p>
+        <button type="submit" class="btn-primary readbutton">Lezen</button>
+      </div>
+    </section>
+  </main>
+  <!-- there isnt aside needed for content yet
+  <aside>
+  </aside> -->
+  <!-- here will be some copyright info -->
+  <footer>
+    <p>Copyright Transavia, in samenwerking met Max Molenaar.</p>
+  </footer>
+</body>
+
+</html>

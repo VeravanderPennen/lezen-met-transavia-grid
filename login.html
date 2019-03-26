@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inloggen</title>
+  <link rel="stylesheet" type="text/css" href="login.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body class="bodygrid">
+  <!-- header with logo & navigation -->
+  <header>
+    <img src="img/transavia-logo.svg" class="logo" />
+    <!-- <nav>
+          <ul>
+            <li><a href="#">Vluchtstatus</a>
+              <li><a href="#">Inchecken</a>
+                <li><a href="#">Inpaklijst</a>
+          </ul>
+        </nav> -->
+    <div class="menu-icons-container">
+      <a href="#" class="inlog-text">Inloggen</a>
+      <img src="img/home-icon.jpg" class="menu-icon" />
+      <img src="img/logon-icon.jpg" class="logon-icon" />
+      <img src="img/search-icon.png" class="search-icon" />
+    </div>
+  </header>
+  <main class="maingrid">
+    <section class="login">
+      <h1>Inloggen</h1>
+      <form method="post" action="Formulierpagina.html">
+        <fieldset>
+          <legend>Vul je e-mailadres en wachtwoord in om in te loggen.</legend>
+          <label>
+              <span>Emailadres</span>
+              <input type="email" name="email" placeholder="gebruiker@domein.nl" required>
+              <em>vereist</em>
+          </label>
+          <label>
+              <span>Wachtwoord</span>
+              <input type="password" name="password" required>
+              <em>vereist</em>
+          </label>
+          <a>Wachtwoord vergeten?</a>
+          <a>Heb je geen account? Meld je nu aan!</a>
+        </fieldset>
+    </section>
+  </main>
+  <!-- there isnt aside needed for content yet
+      <aside>
+      </aside> -->
+  <!-- here will be some copyright info -->
+  <footer>
+    <p>Copyright Transavia, in samenwerking met Max Molenaar.</p>
+  </footer>
+</body>
+
+</html>
