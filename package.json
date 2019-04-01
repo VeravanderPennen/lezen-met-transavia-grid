@@ -1,0 +1,25 @@
+{
+  "name": "lezen-met-transavia-grid",
+  "version": "1.0.0",
+  "description": "Project build with css grid layout",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o public/css",
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VeravanderPennen/lezen-met-transavia-grid.git"
+  },
+  "author": "Vera van der Pennen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VeravanderPennen/lezen-met-transavia-grid/issues"
+  },
+  "homepage": "https://github.com/VeravanderPennen/lezen-met-transavia-grid#readme"
+}

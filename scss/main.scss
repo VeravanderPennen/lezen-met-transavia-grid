@@ -1,0 +1,152 @@
+@import "grid";
+@import "text";
+@import "input";
+@import "button";
+
+main {
+  background: #f7f7f7;
+}
+
+.bodygrid {
+  margin: 0;
+}
+
+/*header, h1, form, .search, .sort, .filter, .all-stories1, .all-stories2, .story, footer {
+  padding: 0.75em;
+}*/
+
+header {
+  /*background-color: #b46ae3;*/
+  padding: 0.5em;
+  z-index: 1;
+  box-shadow: 0 0.3125em 0.625em 0 rgba(0, 0, 0, .15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  margin-right: 2em;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  width: 100%;
+  margin-top: 0.65em;
+  padding-left: 0;
+}
+
+nav li {
+  float: left;
+  padding: 0em 2em 0em 0em;
+  list-style: none;
+}
+
+a {
+  font-family: Nexa bold;
+  color: #00D752;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-icons-container {
+  display: inline-block;
+}
+
+.menu-icons-container>* {
+  float: right;
+}
+
+.sub-header, .all-stories1, .all-stories2 {
+  padding: 2rem 0;
+}
+
+.inlog-text {
+  display: none;
+  margin-top: 0.8em;
+  margin-left: 0.5em;
+}
+
+h1 {
+  margin: 0;
+  padding: 1em;
+  font-size: 1.7em;
+  color: #00D752;
+}
+
+form {
+  margin-top: 0.5em;
+}
+
+.search {
+  position: relative;
+  right: 0px;
+  /*-webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .10s ease;*/
+  width: 30em;
+  display: none;
+  overflow: hidden;
+}
+
+
+.sort {
+  /*background-color: #f49018;*/
+}
+
+.filter {
+  /*background-color: #f3e5d8;*/
+}
+
+.all-stories1 {
+  background-color: #f3e5d8;
+}
+
+.all-stories2 {
+  /*background-color: #f3e5d8;*/
+}
+
+.all-stories1 img, .all-stories2 img {
+  width: 100%;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+}
+
+.story img {
+  border-radius: .75rem;
+}
+
+footer {
+  /*background-color: #f5f77c;*/
+  text-align: center;
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-icon {
+    display: none;
+  }
+  nav {
+    display: inline-block;
+  }
+  .inlog-text {
+    display: inline-block;
+  }
+  form {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .sort {
+    display: block;
+  }
+  .filter {
+    display: block;
+  }
+}
