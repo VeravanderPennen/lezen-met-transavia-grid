@@ -1,10 +1,13 @@
 @import "grid";
+@import "color";
 @import "text";
 @import "input";
 @import "button";
+@import "lists";
+@import "cards";
 
 main {
-  background: #f7f7f7;
+  background: #FFFFFF;
 }
 
 .bodygrid {
@@ -16,13 +19,13 @@ main {
 }*/
 
 header {
-  /*background-color: #b46ae3;*/
-  padding: 0.5em;
-  z-index: 1;
-  box-shadow: 0 0.3125em 0.625em 0 rgba(0, 0, 0, .15);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: .5em 1em;
+  z-index: 1;
+  background-color: $white;
+  box-shadow: 0 0.3125em 0.625em 0 rgba(0, 0, 0, .15);
 }
 
 header .logo {
@@ -48,7 +51,6 @@ nav li {
 a {
   font-family: Nexa bold;
   color: #00D752;
-  text-decoration: none;
   cursor: pointer;
 }
 
@@ -60,21 +62,14 @@ a {
   float: right;
 }
 
-.sub-header, .all-stories1, .all-stories2 {
-  padding: 2rem 0;
-}
-
 .inlog-text {
   display: none;
   margin-top: 0.8em;
   margin-left: 0.5em;
 }
 
-h1 {
-  margin: 0;
-  padding: 1em;
-  font-size: 1.7em;
-  color: #00D752;
+.sub-header {
+  background-color: $beige;
 }
 
 form {
@@ -105,21 +100,9 @@ form {
   background-color: #f3e5d8;
 }
 
-.all-stories2 {
-  /*background-color: #f3e5d8;*/
-}
 
 .all-stories1 img, .all-stories2 img {
   width: 100%;
-}
-
-.story {
-  display: flex;
-  flex-direction: column;
-}
-
-.story img {
-  border-radius: .75rem;
 }
 
 footer {
@@ -139,14 +122,5 @@ footer {
   }
   form {
     margin: 0;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  .sort {
-    display: block;
-  }
-  .filter {
-    display: block;
   }
 }
