@@ -6,46 +6,37 @@
   <meta name="viewport" content="width=device-width" , initial-scale="1.0">
   <title>Transavia</title>
   <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://picsum.photos/200/300s/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body class="bodygrid">
-  <!-- header with logo & navigation -->
   <header>
     <img src="img/transavia-logo.svg" class="logo" />
-    <!-- <nav>
-      <ul>
-        <li><a href="#">Vluchtstatus</a>
-          <li><a href="#">Inchecken</a>
-            <li><a href="#">Inpaklijst</a>
-      </ul>
-    </nav> -->
-    <section class="search">
-      <!--<h3>Zoek een verhaal</h3>-->
-      <input type="text" placeholder="Typ hier uw zoekwoorden">
-      <button type="submit" class="button searchbutton btn-primary"><img src="img/search-icon-white.png"></img></button>
-    </section>
-    <div class="menu-icons-container">
+    <nav class="menu-icons-container">
       <a href="#" class="inlog-text">Inloggen</a>
-      <img src="img/home-icon.jpg" class="menu-icon" />
+      <!-- <img src="img/home-icon.jpg" class="menu-icon" /> -->
       <img src="img/logon-icon.jpg" class="logon-icon" />
-      <img src="img/search-icon.png" class="search-icon" />
-    </div>
+      <!-- <img src="img/search-icon.png" class="search-icon" /> -->
+    </nav>
   </header>
   <main class="maingrid">
-    <!-- titel, search & filter/sort options -->
     <section class="sub-header">
       <div class="container">
-        <div class="card filter">
-          <h1>Wat wil je lezen?</h1>
-            <!--<h3>Filter op</h3>-->
-          <ul>
-            <button class="btn--color-filter"></button>
-            <button class="btn--color-filter"></button>
-            <button class="btn--color-filter"></button>
-            <button class="btn--color-filter"></button>
-          </ul>
+        <div class="card card--transparent card--filter">
+          <div class="card__body">
+            <h1>Wat wil je lezen?</h1>
+            <form class="search">
+              <input type="text" placeholder="Typ hier uw zoekwoorden">
+              <button type="submit" class="button searchbutton btn-primary"><img src="img/search-icon-white.png"></img></button>
+            </form>
+            <ul class="filter">
+              <button class="btn--color-filter"></button>
+              <button class="btn--color-filter"></button>
+              <button class="btn--color-filter"></button>
+              <button class="btn--color-filter"></button>
+            </ul>
+          </div>
         </div>
         <!-- <form class="login">
           <input type="email" placeholder="Email">
@@ -62,71 +53,91 @@
         </div> -->
       </div>
     </section>
-    <!-- part with all the stories -->
     <section class="all-stories1">
       <div class="container">
-      <!-- <h2 class="list-title-stories"> Jouw lijstje</h2> -->
-        <div class="card card--transparent">
+        <a href="" class="card card--transparent">
           <h2>Freudiaans</h2>
-          <img src="/img/image-of-a-cat.jpg" alt="cat">
-          <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek
-            van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op 99 verschillende manieren probeert te vertellen dat hij homoseksueel is en seks wil met...</p>
-          <button type="submit" class="btn-primary readbutton">Lezen</button>
-        </div>
-        <div class="card card--transparent">
+          <div class="card__media">
+            <img src="https://picsum.photos/600/400" alt="sfeerimpressie">
+          </div>
+          <div class="card__body">
+            <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek
+              van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op 99 verschillende manieren probeert te vertellen dat hij homoseksueel is en seks wil met</p>
+            <!-- <button type="submit" class="btn-primary readbutton">Lezen</button> -->
+          </div>
+        </a>
+        <a href="" class="card card--transparent">
           <h2>Steenkolenfrans</h2>
-          <img src="/img/image-of-a-cat.jpg" alt="cat">
-          <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur Exercices de Style de Raymond Queneau. C’est
-            un livre très dificile d’acquérir. Mais zut alors, quelle ravage ici! Il y a beaucoup de puits de travaille! Les politis enfonsent, les foret forent. Devant le bibliothèque...</p>
-          <button type="submit" class="btn-primary readbutton">Lezen</button>
-        </div>
-        <div class="card card--transparent">
+          <div class="card__media">
+            <img src="https://picsum.photos/600/400" alt="sfeerimpressie">
+          </div>
+          <div class="card__body">
+            <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur Exercices de Style de Raymond Queneau. C’est
+              un livre très dificile d’acquérir. Mais zut alors, quelle ravage ici! Il y a beaucoup de puits de travaille! Les politis enfonsent, les foret forent. Devant le bibliothèque</p>
+            <!-- <button type="submit" class="btn-primary readbutton">Lezen</button> -->
+          </div>
+        </a>
+        <a href="" class="card card--transparent">
           <h2>Het gebrek</h2>
-          <img src="/img/image-of-a-cat.jpg" alt="cat">
-          <p>De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en een striemende miezerregen geselen mijn gezicht. De mensen kijken voor zich uit, ieder voor zich. Ik ben op weg richting de...</p>
-          <button type="submit" class="btn-primary readbutton">Lezen</button>
-        </div>
+          <div class="card__media">
+            <img src="https://picsum.photos/600/400" alt="sfeerimpressie">
+          </div>
+          <div class="card__body">
+            <p>De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en een striemende miezerregen geselen mijn gezicht. De mensen kijken voor zich uit, ieder voor zich. Ik ben op weg richting de </p>
+            <!-- <button type="submit" class="btn-primary readbutton">Lezen</button> -->
+          </div>
+        </a>
       </div>
     </section>
     <section class="all-stories2">
-      <!-- <h2 class="list-title-stories"> Jouw lijstje</h2> -->
       <div class="container">
-        <div class="card card--outline">
+        <a href="" class="card card--outline">
           <h2>Freudiaans</h2>
-          <img src="/img/image-of-a-cat.jpg" alt="cat">
-          <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek
-            van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op 99 verschillende manieren probeert te vertellen dat hij homoseksueel is en seks wil met...</p>
-          <button type="submit" class="btn-primary readbutton">Lezen</button>
-        </div>
-        <div class="card card--outline">
+          <div class="card__media">
+            <img src="https://picsum.photos/600/400" alt="sfeerimpressie">
+          </div>
+          <div class="card__body">
+            <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek
+              van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op 99 verschillende manieren probeert te vertellen dat hij homoseksueel is en seks wil met</p>
+            <!-- <button type="submit" class="btn-primary readbutton">Lezen</button> -->
+          </div>
+        </a>
+        <a href="" class="card card--outline">
           <h2>Steenkolenfrans</h2>
-          <img src="/img/image-of-a-cat.jpg" alt="cat">
-          <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur Exercices de Style de Raymond Queneau. C’est
-            un livre très dificile d’acquérir. Mais zut alors, quelle ravage ici! Il y a beaucoup de puits de travaille! Les politis enfonsent, les foret forent. Devant le bibliothèque...</p>
-          <button type="submit" class="btn-primary readbutton">Lezen</button>
-        </div>
-        <div class="card card--outline">
+          <div class="card__media">
+            <img src="https://picsum.photos/600/400" alt="sfeerimpressie">
+          </div>
+          <div class="card__body">
+            <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur Exercices de Style de Raymond Queneau. C’est
+              un livre très dificile d’acquérir. Mais zut alors, quelle ravage ici! Il y a beaucoup de puits de travaille! Les politis enfonsent, les foret forent. Devant le bibliothèque</p>
+            <!-- <button type="submit" class="btn-primary readbutton">Lezen</button> -->
+          </div>
+        </a>
+        <a href="" class="card card--outline">
           <h2>Het gebrek</h2>
-          <img src="/img/image-of-a-cat.jpg" alt="cat">
-          <p>De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en een striemende miezerregen geselen mijn gezicht. De mensen kijken voor zich uit, ieder voor zich. Ik ben op weg richting de...</p>
-          <button type="submit" class="btn-primary readbutton">Lezen</button>
-        </div>
-        <div class="card card--outline">
+          <div class="card__media">
+            <img src="https://picsum.photos/600/400" alt="sfeerimpressie">
+          </div>
+          <div class="card__body">
+            <p>De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en een striemende miezerregen geselen mijn gezicht. De mensen kijken voor zich uit, ieder voor zich. Ik ben op weg richting de</p>
+            <!-- <button type="submit" class="btn-primary readbutton">Lezen</button> -->
+          </div>
+        </a>
+        <a href="" class="card card--outline">
           <h2>Het gebrek</h2>
-          <img src="/img/image-of-a-cat.jpg" alt="cat">
-          <p>De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en een striemende miezerregen geselen mijn gezicht. De mensen kijken voor zich uit, ieder voor zich. Ik ben op weg richting de...</p>
-          <button type="submit" class="btn-primary readbutton">Lezen</button>
-        </div>
+          <div class="card__media">
+            <img src="https://picsum.photos/600/400" alt="sfeerimpressie">
+          </div>
+          <div class="card__body">
+            <p>De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en een striemende miezerregen geselen mijn gezicht. De mensen kijken voor zich uit, ieder voor zich. Ik ben op weg richting de</p>
+            <!-- <button type="submit" class="btn-primary readbutton">Lezen</button> -->
+          </div>
+        </a>
       </div>
     </section>
   </main>
-  <!-- there isnt aside needed for content yet
-  <aside>
-  </aside> -->
-  <!-- here will be some copyright info -->
   <footer>
     <p>Copyright Transavia, in samenwerking met Max Molenaar.</p>
   </footer>
 </body>
-
 </html>

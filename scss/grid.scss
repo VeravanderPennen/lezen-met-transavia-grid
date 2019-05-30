@@ -33,11 +33,11 @@
 }
 
 .all-stories1 .container {
-  grid-gap: 1em;
+  grid-gap: 2rem;
 }
 
 .all-stories2 .container {
-  grid-gap: 1em;
+  grid-gap: 2rem;
 }
 
 @media screen and (min-width: 48em) {
@@ -85,16 +85,7 @@
   grid-area: sub-header;
 }
 
-// form {
-//   grid-area: form;
-// }
-
-// .sort {
-//   grid-area: sort;
-//   display: none;
-// }
-
-.filter {
+.card--filter {
   grid-area: filter;
 }
 
