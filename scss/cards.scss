@@ -23,21 +23,13 @@
     }
   }
 
-  // @media screen and (min-width: 48em) {
-  //   margin-right: 1em;
-  //
-  //   &:last-child {
-  //     margin-right: 0;
-  //   }
-  // }
-
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     line-height: 1;
   }
 
   &__body {
-    padding: 1.5rem;
+    padding: 1.5em;
     border-radius: .75rem;
 
     > p {
@@ -48,8 +40,8 @@
       &::before {
           content: "\003e";
           font-weight: 700;
-          font-size: 1.5rem;
-          margin-right: .5rem;
+          font-size: 1.5em;
+          margin-right: .5em;
           line-height: 24px;
           vertical-align: middle;
       }

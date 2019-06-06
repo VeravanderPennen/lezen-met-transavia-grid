@@ -18,7 +18,7 @@ header {
   padding: .5em 1em;
   z-index: 1;
   background-color: $white;
-  box-shadow: 0 0.3125em 0.625em 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 0.3125rem 0.625rem 0 rgba(0, 0, 0, .15);
 
   .logo {
     margin-right: 2em;
@@ -32,46 +32,16 @@ main {
 }
 
 nav {
-  display: none;
-
-  ul {
-    width: 100%;
-    margin-top: 0.65em;
-    padding-left: 0;
-  }
-
-  li {
-    float: left;
-    padding: 0em 2em 0em 0em;
-    list-style: none;
-  }
-
   a {
     text-decoration: none;
-    color: #00D752;
+    color: $primary;
     font-family: Nexa bold;
     cursor: pointer;
   }
 }
 
-.menu-icons-container {
-  display: inline-block;
-}
-
-.menu-icons-container>* {
-  float: right;
-}
-
-.inlog-text {
-  display: none;
-}
-
 .sub-header {
   background-color: $beige;
-}
-
-form {
-  margin-top: 0.5em;
 }
 
 .search {
@@ -80,39 +50,14 @@ form {
   transition: all .10s ease;*/
 }
 
-
-.sort {
-  /*background-color: #f49018;*/
-}
-
 .filter {
   margin-top: 1rem;
-  /*background-color: #f3e5d8;*/
 }
 
 .all-stories1 {
-  background-color: #f3e5d8;
+  background-color: $beige;
 }
 
 footer {
-  /*background-color: #f5f77c;*/
   text-align: center;
-}
-
-@media screen and (min-width: 37.5em) {
-  .menu-icon {
-    display: none;
-  }
-  nav {
-    display: inline-block;
-  }
-  .inlog-text {
-    display: inline-block;
-  }
-  .logon-icon {
-    display: none;
-  }
-  form {
-    margin: 0;
-  }
 }

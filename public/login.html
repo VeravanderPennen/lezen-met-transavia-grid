@@ -3,58 +3,58 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inloggen</title>
-  <link rel="stylesheet" type="text/css" href="login.css" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <title>Transavia</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script src="https://picsum.photos/200/300s/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body class="bodygrid">
-  <!-- header with logo & navigation -->
   <header>
     <img src="img/transavia-logo.svg" class="logo" />
-    <!-- <nav>
-          <ul>
-            <li><a href="#">Vluchtstatus</a>
-              <li><a href="#">Inchecken</a>
-                <li><a href="#">Inpaklijst</a>
-          </ul>
-        </nav> -->
-    <div class="menu-icons-container">
-      <a href="#" class="inlog-text">Inloggen</a>
-      <img src="img/home-icon.jpg" class="menu-icon" />
-      <img src="img/logon-icon.jpg" class="logon-icon" />
-      <img src="img/search-icon.png" class="search-icon" />
-    </div>
+    <nav>
+      <a href="#" class="link--login">Inloggen</a>
+    </nav>
   </header>
   <main class="maingrid">
-    <section class="login">
-      <h1>Inloggen</h1>
-      <form method="post" action="Formulierpagina.html">
-        <fieldset>
-          <legend>Vul je e-mailadres en wachtwoord in om in te loggen.</legend>
-          <label>
-              <span>Emailadres</span>
-              <input type="email" name="email" placeholder="gebruiker@domein.nl" required>
-              <em>vereist</em>
-          </label>
-          <label>
-              <span>Wachtwoord</span>
-              <input type="password" name="password" required>
-              <em>vereist</em>
-          </label>
-          <a>Wachtwoord vergeten?</a>
-          <a>Heb je geen account? Meld je nu aan!</a>
-        </fieldset>
+    <section class="sub-header">
+      <div class="container">
+        <div class="card card--transparent card--filter">
+          <div class="card__body">
+            <h1>Wat wil je lezen?</h1>
+            <form class="search">
+              <input type="text" placeholder="Typ hier uw zoekwoorden">
+              <button type="submit" class="button btn--search btn--primary"><img src="img/search-icon-white.png"></img></button>
+            </form>
+            <ul class="filter">
+              <button class="filter__btn"></button>
+              <button class="filter__btn"></button>
+              <button class="filter__btn"></button>
+              <button class="filter__btn"></button>
+            </ul>
+          </div>
+        </div>
+        <!-- <form class="login">
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Wachtwoord">
+          <a href="#"><button type="submit" class="btn-primary">Inloggen</button></a>
+        </form> -->
+        <!-- <div class="sort">
+          <h3>Sorteer op</h3>
+          <button>Alfabet</button>
+          <button>Aangeraden</button>
+          <button>Leesduur</button>
+        </div> -->
+      </div>
+    </section>
+    <section class="all-stories1">
+      <div class="container">
+      </div>
     </section>
   </main>
-  <!-- there isnt aside needed for content yet
-      <aside>
-      </aside> -->
-  <!-- here will be some copyright info -->
   <footer>
-    <p>Copyright Transavia, in samenwerking met Max Molenaar.</p>
+    <p>Copyright</p>
   </footer>
 </body>
-
 </html>
